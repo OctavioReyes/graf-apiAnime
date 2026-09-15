@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Graf API Anime - Ejemplos SVG</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #141e30, #243b55);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #cbd5e1;
+            margin-bottom: 40px;
+            font-size: 18px;
+        }
+
+        .examples {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 18px;
+            padding: 30px 20px;
+            backdrop-filter: blur(10px);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.16);
+        }
+
+        .icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-bottom: 12px;
+        }
+
+        p {
+            color: #cbd5e1;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 22px;
+            background: #ffffff;
+            color: #243b55;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            transform: scale(1.05);
+            background: #e2e8f0;
+        }
+
+        footer {
+            margin-top: 40px;
+            color: #94a3b8;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Graf API Anime</h1>
+
+        <p class="subtitle">
+            Ejemplos de SVG y animación
+        </p>
+
+        <div class="examples">
+
+            <!-- SVG Graph -->
+            <div class="card">
+                <div class="icon">📊</div>
+
+                <h2>SVG Graph</h2>
+
+                <p>
+                    Ejemplo de representación gráfica utilizando SVG.
+                </p>
+
+                <a 
+                    href="examples/svg-graph/index.html"
+                    class="button">
+                    Abrir ejemplo
+                </a>
+            </div>
+
+
+            <!-- SVG Line Drawing -->
+            <div class="card">
+                <div class="icon">✏️</div>
+
+                <h2>SVG Line Drawing</h2>
+
+                <p>
+                    Ejemplo de dibujo y animación de líneas mediante SVG.
+                </p>
+
+                <a 
+                    href="examples/svg-line-drawing/index.html"
+                    class="button">
+                    Abrir ejemplo
+                </a>
+            </div>
+
+
+            <!-- Animatable Follow Cursor -->
+            <div class="card">
+                <div class="icon">🖱️</div>
+
+                <h2>Animatable Follow Cursor</h2>
+
+                <p>
+                    Ejemplo interactivo de animación siguiendo el cursor.
+                </p>
+
+                <a 
+                    href="examples/animatable-follow-cursor/index.html"
+                    class="button">
+                    Abrir ejemplo
+                </a>
+            </div>
+
+        </div>
+
+        <footer>
+            Ingeniería en Sistemas Computacionales
+        </footer>
+
+    </div>
+
+</body>
+</html>
